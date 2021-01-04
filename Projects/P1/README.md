@@ -1,7 +1,5 @@
 # Project 1: PacMan
-Due: TBD, 11:59pm EDT (Late TBD)
-
-Points: TBD public, TBD semipublic, TBD secret
+Due: 01/11, 11:59pm EDT (Late TBD)
 
 ## Before You Start
 
