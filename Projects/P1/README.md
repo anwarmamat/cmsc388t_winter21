@@ -82,7 +82,7 @@ Make sure to run these commands from inside the P1 directory
 ### consume()
 
 - **Type**: `() -> JComponent`
-- **Description**: This method checks to see if there is a 'power-cookie' located in Pacman's current <img src="https://render.githubusercontent.com/render/math?math=(x, y)">  coordinate. If there is, this method calls the _______ method from the Map Class, and returns a boolean if the cookie a consumed.
+- **Description**: This method checks to see if there is a 'power-cookie' located in Pacman's current <img src="https://render.githubusercontent.com/render/math?math=(x, y)">  coordinate. If there is, this method calls the eatCookie method from the Map Class, and returns the cookie component if the cookie a consumed, and null otherwise.
 - **Examples**:
 ```java
 //pacman at location (9,12)
@@ -175,13 +175,13 @@ The Map Class uses Java GUI to create the visual represenation of our game. For 
 
 
 ### eatCookie(String Name)
-- **Type**: `() -> Bool`
-- **Description**: The method controls Pacman eating a cookie. If it was able to successfully eat the cookie and update the display to do so return true, otherwise return false.
+- **Type**: `() -> JComponent`
+- **Description**: The method controls Pacman eating a cookie. When the function is able to successfully update display to eat a cookie it returns the Cookie component that has been eaten, otherwise it returns null.
 
  ```java
-  //cookie at location (4,6)
+  //cookie NOT at location (4,6)
   //pacman at location (4,6)
-  Map.eatCookie("pacman") -> true
+  Map.eatCookie("pacman") -> null
   ```
 
 ## Part 2: Writing Tests
