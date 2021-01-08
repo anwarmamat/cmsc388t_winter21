@@ -1,7 +1,5 @@
 # Project 1: PacMan
-Due: TBD, 11:59pm EDT (Late TBD)
-
-Points: TBD public, TBD semipublic, TBD secret
+Due: 01/11, 11:59pm EDT (Late TBD)
 
 ## Before You Start
 
@@ -31,7 +29,7 @@ In this part of the project, you will develop code collaboratively with your tea
 
 For each feature, a template java file has been provided that you will be filling out with your team.
 
-Each feature can be divided evenly among your group and each member should create their own feature-item branch off of the feature branch. For example, if you are working on the PacMan class and have chosen to work on the get_valid_moves function, you should make a branch from FTR-pacman with the name pacman-get_valid_moves. By the end of this section, you should have created 3 feature item branches with your code. 
+Each feature can be divided evenly among your group and each member should create their own feature-item branch off of the feature branch. For example, if you are working on the PacMan class and have chosen to work on the get_valid_moves function, you should make a branch from FTR-pacman with the name pacman-get_valid_moves. By the end of this section, you should have 12 feature item branches and 3 feature branches with your code. 
 
 Once this part has been completed, you should be able to see a JFrame appear that allows you to play Automonous PacMan by compiling and running your files:
 
@@ -84,7 +82,7 @@ Make sure to run these commands from inside the P1 directory
 ### consume()
 
 - **Type**: `() -> JComponent`
-- **Description**: This method checks to see if there is a 'power-cookie' located in Pacman's current <img src="https://render.githubusercontent.com/render/math?math=(x, y)">  coordinate. If there is, this method calls the _______ method from the Map Class, and returns a boolean if the cookie a consumed.
+- **Description**: This method checks to see if there is a 'power-cookie' located in Pacman's current <img src="https://render.githubusercontent.com/render/math?math=(x, y)">  coordinate. If there is, this method calls the eatCookie method from the Map Class, and returns the cookie component if the cookie a consumed, and null otherwise.
 - **Examples**:
 ```java
 //pacman at location (9,12)
@@ -177,13 +175,13 @@ The Map Class uses Java GUI to create the visual represenation of our game. For 
 
 
 ### eatCookie(String Name)
-- **Type**: `() -> Bool`
-- **Description**: The method controls Pacman eating a cookie. If it was able to successfully eat the cookie and update the display to do so return true, otherwise return false.
+- **Type**: `() -> JComponent`
+- **Description**: The method controls Pacman eating a cookie. When the function is able to successfully update display to eat a cookie it returns the Cookie component that has been eaten, otherwise it returns null.
 
  ```java
-  //cookie at location (4,6)
+  //cookie NOT at location (4,6)
   //pacman at location (4,6)
-  Map.eatCookie("pacman") -> true
+  Map.eatCookie("pacman") -> null
   ```
 
 ## Part 2: Writing Tests

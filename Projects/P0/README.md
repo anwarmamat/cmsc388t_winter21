@@ -1,5 +1,5 @@
 # Project 0
-Due: 01/03, 11:59pm EDT (Late TBD)
+Due: 01/04, 11:59pm EDT (Late TBD)
 
 ## Join The Slack
 
