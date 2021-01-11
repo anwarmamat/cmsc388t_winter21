@@ -1,5 +1,5 @@
 # Project 1: PacMan
-Due: 01/11, 11:59pm EDT (Late TBD)
+Due: 01/11, 11:59pm EDT (Late 01/12, 11:59pm)
 
 ## Before You Start
 
