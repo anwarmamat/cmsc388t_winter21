@@ -1,0 +1,3 @@
+[submodule "Projects/P3/cmsc388T-web-template"]
+	path = Projects/P3/cmsc388T-web-template
+	url = git@github.com:sagars729/cmsc388T-web-template.git
